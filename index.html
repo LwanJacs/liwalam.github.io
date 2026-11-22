@@ -1,56 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liwalam Dingiswayo | Software Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Liwalam Dingiswayo — Software Engineer</title>
 
+    <!--Favicons $ Touch Icons -->
+    <link rel="icon" type="image/png" href="res/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="res/favicon.svg"/>
+    <link rel="shortcut icon" href="res/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="res/apple-touch-icon.png"/>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <!--Header Navigation-->
     <header>
-        <nav>
-            <h2 class="logo">LD.</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <a href="#about" class="nav-logo font-mono">Liwalam Dingiswayo</a>
+
+                <!--Mobile Toggle Button-->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                    &#9776;
+                </button>
+                <ul class="nav-links font-mono" id="navLinks">
+                    <li><a href="#about" onclick="closeMenu()">Summary</a></li>
+                    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                    <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+                    <li><a href="#education" onclick="closeMenu()">Education</a></li>
+                    <li><a href="Liwalam_Dingiswayo" download class="btn-cv-nav">$DownArrowBar; Resume PDF</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="hero">
-        <div class="hero-text">
-            <p class="intro">Hello, I am</p>
-
-            <h1>Liwalam Dingiswayo</h1>
-
-            <h2>Software Developer</h2>
-
-            <p class="description">
-                Software Developer. A newbie in the field, but looking to learn and get better. 
-                I've worked on a few projects such as an e-commerce platform, an android native application,
-                and python applications for school. I'm proficient in SQL, python, php, Android development,
-                and backend systems. I'm continously expanding my skills within software engineering.
-            </p>
-            
-            <div class="buttons">
-                <a href="#" class="btn-primary">
-                    View My Work
-                </a>
-                <a href="#" class="btn-secondary">
-                    Download CV
-                </a>
-            </div>
-        </div>
-
-        <div class="hero-image">
-            <div class="profile-circle">
-                <img src="images/profile.jpg" alt="Profile Picture">
-            </div>
-        </div>
-    </section>
 </body>
 </html>
-
