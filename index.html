@@ -29,13 +29,13 @@
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
                     &#9776;
                 </button>
-                <ul class="nav-links">
-                    <li><a href="#summary" onclick="closeMenu()">Summary</a></li>
-                    <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-                    <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-                    <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
-                    <li><a href="#education" onclick="closeMenu()">Education</a></li>
-                    <li><a href="Per/Liwalam_Dingiswayo_CV.pdf" download class="btn-cv-nav">&#8595; Resume</a></li>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="Per/Liwalam_Dingiswayo_CV.pdf" class="resume-button" download>Resume</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,27 +46,39 @@
         
         <!--Summary Section-->
         <section id="summary">
-            <div class="card">
-                <div class="hero-grid">
-                    <div>
-                        <img src="" alt="Liwalam Dingiswayo" class="profile-img">
+            <div class="hero">
+                <div class="hero-text">
+                    <p class="hero-intro">
+                        Hello, I'm
+                    </p>
+                    <h1>Liwalam Dingiswayo</h1>
+                    <h2 class="hero-title">Software Developer</h2>
+                    <p class="hero-description">
+                        Entry-level software engineer buidling softawe that solves problems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="primary-btn">
+                            View Projects
+                        </a>
+                        <!-- Download CV Button-->
+                        <a href="Per/Liwalam_Dingiswayo_CV.pdf" class="secondary-btn" download>
+                           Download CV
+                        </a>
                     </div>
-                    <div>
-                        <span class="badge font-mono">Software Developer | Python, Kotlin, Java, Frontend Development</span>
-                        <h1 class="hero-title">Liwalam Dingiswayo</h1>
-                        <p class="hero-bio">
-                            Entry-level software engineer buidling softawe that solves problems.
-                        </p>
-                        <div class="social-row">
-                            <!-- Download CV Button-->
-                            <a href="Per/Liwalam_Dingiswayo_CV.pdf" download class="btn-cta font-mono" style="padding: 0.45rem 1rem; font-size: 0.8rem;">
-                               &#8595; Download Resume (PDF) 
-                            </a>
-                            <button class="btn-action font-mono" id="copyBtn">
-                                &plus; Copy Email
-                            </button>
+                    <div class="tech-stack">
+                        <span>Kotlin</span>
+                        <span>Java</span>
+                        <span>Android</span>
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                        <span>Git</span>
+                    </div>
+
+                    <div class="hero-image">
+                        <div class="profile-card">
+                            <img src="images/profile.png" alt="Liwalam Dingiswayo">
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </section>
