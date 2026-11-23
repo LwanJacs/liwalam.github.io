@@ -23,7 +23,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#about" class="nav-logo font-mono">Liwalam Dingiswayo</a>
+                <a href="#about" class="nav-logo font-mono"><span class="purple">L</span>D.</a>
 
                 <!--Mobile Toggle Button-->
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
@@ -35,10 +35,39 @@
                     <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
                     <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
                     <li><a href="#education" onclick="closeMenu()">Education</a></li>
-                    <li><a href="Liwalam_Dingiswayo" download class="btn-cv-nav">$DownArrowBar; Resume PDF</a></li>
+                    <li><a href="Per/Liwalam_Dingiswayo_CV.pdf" download class="btn-cv-nav">&#8595; Resume</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!--Summary Section-->
+        <section id="about" style="padding-top: 1rem; scroll-margin-top: 5rem;">
+            <div class="card">
+                <div class="hero-grid">
+                    <div>
+                        <img src="" alt="Liwalam Dingiswayo" class="profile-img">
+                    </div>
+                    <div>
+                        <span class="badge font-mono">Software Developer | Python, Kotlin, Java, Frontend Development</span>
+                        <h1 class="hero-title">Liwalam Dingiswayo</h1>
+                        <p class="hero-bio">
+                            Entry-levevl software engineer and BSc IT student.
+                        </p>
+                        <div class="social-row">
+                            <!-- Download CV Button-->
+                            <a href="Per/Liwalam_Dingiswayo_CV.pdf" download class="btn-cta font-mono" style="padding: 0.45rem 1rem; font-size: 0.8rem;">
+                               &#8595; Download Resume (PDF) 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
 </body>
 </html>
